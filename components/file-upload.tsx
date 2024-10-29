@@ -19,9 +19,9 @@ export const FileUpload = ({
         <UploadDropzone
             endpoint={endpoint}
             onClientUploadComplete={(res) => {
-                // onChange(res?.[0].fileUrl);
+                onChange(res?.[0].url);
                 // chrome gpt clerk auth type error soltuion using gpt
-                onChange((res?.[0] as any).fileUrl);
+                // onChange((res?.[0] as any).fileUrl);
             }}
             onUploadError={(error: Error) => {
                 console.log(error);
