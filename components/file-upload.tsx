@@ -5,7 +5,8 @@ import Image from "next/image";
 
 import { UploadDropzone } from "@/lib/uploadthing";
 
-import "@uploadthing/react/styles.css";
+// import "@uploadthing/react/styles.css";
+// he said to remove it
 
 interface FileUploadProps {
     onChange: (url?: string) => void;
